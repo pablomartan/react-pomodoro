@@ -1,6 +1,22 @@
 import React from 'react';
 
 export const LengthControl = props => {
+  let brValue = props.brLength.valueOf();
+  let seValue = props.seLength.valueOf();
+  
+  const brDec = (value = brValue) => {
+    props.setBr(value > 1 ? value - 1 : value);
+  };
+  const brInc = (value = brValue) => {
+    props.setBr(value < 60 ? value + 1 : value);
+  };
+  const seDec = (value = seValue) => {
+    props.setSe(value > 1 ? value - 1 : value);
+  };
+  const seInc = (value = seValue) => {
+    props.setSe(value < 60 ? value + 1 : value);
+  };
+
   return(
     <div id="length-control">
         <div id="break-control">
