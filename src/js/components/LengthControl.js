@@ -30,7 +30,7 @@ export const LengthControl = props => {
           <div id="session-label">Session</div>
           <div id="session-decrement" onClick={() => seDec()}></div>
           <div id="session-length">{props.seLength}</div>
-          <div id="session-increment" onClick{() => seInc()}></div>
+          <div id="session-increment" onClick={() => seInc()}></div>
         </div>
     </div>
   )
