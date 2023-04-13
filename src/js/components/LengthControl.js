@@ -18,19 +18,19 @@ export const LengthControl = props => {
   };
 
   return(
-    <div id="length-control">
-        <div id="break-control">
+    <div id="length-control" className="row">
+        <div id="break-control" className="row col text-center">
           <div id="break-label">Break</div>
-          <div id="break-decrement" onClick={() => brDec()}></div>
-          <div id="break-lenght">{props.brLength}</div>
-          <div id="break-increment" onClick={() => brInc()}></div>
+          <div id="break-decrement" className="col" onClick={() => brDec()}></div>
+          <div id="break-lenght" className="col">{props.brLength}</div>
+          <div id="break-increment" className="col" onClick={() => brInc()}></div>
         </div>
 
-        <div id="session-control">
+        <div id="session-control" className="row col text-center">
           <div id="session-label">Session</div>
-          <div id="session-decrement" onClick={() => seDec()}></div>
-          <div id="session-length">{props.seLength}</div>
-          <div id="session-increment" onClick={() => seInc()}></div>
+          <div id="session-decrement" className="col" onClick={() => seDec()}></div>
+          <div id="session-length" className="col">{props.seLength}</div>
+          <div id="session-increment" className="col" onClick={() => seInc()}></div>
         </div>
     </div>
   )
