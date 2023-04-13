@@ -8,6 +8,7 @@ export const TimerControls = props => {
   const reset = () => {
     props.setBr(5);
     props.setSe(25);
+    props.setRuns(0);
   };
 
   return(

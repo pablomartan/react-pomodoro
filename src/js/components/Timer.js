@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export const Timer = props => {
-  const [ runs, setRuns ] = useState(0);
-  const label = runs % 2 == 0 ? 'Session' : 'Break';
+  const label = props.runs % 2 == 0 ? 'Session' : 'Break';
 
   return(
     <div id="timer">
