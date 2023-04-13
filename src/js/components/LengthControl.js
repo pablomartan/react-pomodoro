@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LenghtControl = props => {
+export const LengthControl = props => {
   return(
     <div id="length-control">
         <div id="break-control">
