@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 export const App = () => {
+  const [ breakLength, setBreakLength ] = useState(5);
+  const [ sessionLength, setSessionLength ] = useState(25);
 
   return(
     <div id="app" className="w-100">
