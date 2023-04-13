@@ -8,7 +8,7 @@ export const App = () => {
   return(
     <div id="app" className="w-100">
       <h1 className="text-center">Work + break timer</h1>
-      <LengthControl />
+      <LengthControl brLength={breakLength} seLength={sessionLength} setBr={setBreakLength} setSe={setSessionLength} />
     </div>
   );
 };
